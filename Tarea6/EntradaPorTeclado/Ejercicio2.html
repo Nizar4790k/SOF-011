@@ -16,7 +16,7 @@
         <input type="text" id="name"><br>
         <label>BirthDate</label>
         <input type="date" id="birthDate"><br>
-        <button value="send" onclick="setData">Enviar</button>
+        <button value="send" onclick="setData();">Enviar</button>
 
     </form>
    
@@ -26,17 +26,21 @@
    <script>
       
       function setData(){
-        var name = document.getElementById("name");
-        var birthDate = new Date(document.getElementById("birthDate"));
+        var name = document.getElementById("name").value;
+        var birthDate = new Date(document.getElementById("birthDate").value);
+
+
+
+        
+
         var currentDate= new Date();
         var status = null;
 
-    /*
-        
-        var age = (currentDate.getFullYear+(currentDate.getMonth/12)+
-        (currentDate.getDay/365))-
-        (birthDate.getFullYear+(birthDate.getMonth/12)+
-        (birthDate.getDay/365));
+
+        var age = (currentDate.getFullYear()+(currentDate.getMonth()/12)+
+        (currentDate.getDay()/365))-
+        (birthDate.getFullYear()+(birthDate.getMonth()/12)+
+        (birthDate.getDay()/365));
 
         age = Math.floor(age);
         
@@ -57,8 +61,8 @@
             "Name:"+name+"\n"+
             "Age:"+age+
             "Status:"+status);
-        */
-            alert("Hello World");
+    
+            
       
 
       }
