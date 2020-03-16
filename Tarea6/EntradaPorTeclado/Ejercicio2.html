@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+
+</head>
+
+<body>
+
+    <form>
+
+        <label>Name:</label>
+        <input type="text" id="name"><br>
+        <label>BirthDate</label>
+        <input type="date" id="birthDate"><br>
+        <button value="send" onclick="setData">Enviar</button>
+
+    </form>
+   
+ 
+
+
+   <script>
+      
+      function setData(){
+        var name = document.getElementById("name");
+        var birthDate = new Date(document.getElementById("birthDate"));
+        var currentDate= new Date();
+        var status = null;
+
+    /*
+        
+        var age = (currentDate.getFullYear+(currentDate.getMonth/12)+
+        (currentDate.getDay/365))-
+        (birthDate.getFullYear+(birthDate.getMonth/12)+
+        (birthDate.getDay/365));
+
+        age = Math.floor(age);
+        
+    
+
+        if(age>=18){
+
+        status="adult";
+
+
+        }else{
+            status="younger";
+        }
+        
+
+
+        alert(
+            "Name:"+name+"\n"+
+            "Age:"+age+
+            "Status:"+status);
+        */
+            alert("Hello World");
+      
+
+      }
+      
+
+
+
+    
+       
+    
+    </script>
+
+
+
+</body>
+
+
+</html>

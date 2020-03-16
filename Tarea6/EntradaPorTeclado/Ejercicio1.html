@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+
+</head>
+
+<body>
+
+    <form>
+
+        <label>Name:</label>    
+        <input type="text" id="name"><br>
+        <label>Email:</label>  
+        <input type="text" id="email"><br>
+        <button value="enviar" onclick="setData();">Enviar</button>
+        </form>
+        
+        
+        <script>
+         function setData(){
+           
+            var name = document.getElementById("name").value;
+            var email= document.getElementById("email").value;
+         
+            alert("Name:"+name+"\n"+
+            "Email:"+email);
+        
+         }   
+        
+        
+        </script>
+
+</body>
+
+
+
+</html>
+
+
+
