@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<!--
+
+4. Se debe desarrollar un programa que pida el ingreso del precio de un artículo
+ y la cantidad que lleva el cliente. Mostrar lo que debe abonar el comprador 
+ (Ingresar por teclado un precio sin decimales, es decir un entero: 2, 7, 90 etc.)
+
+
+-->
+
+
+</head>
+
+<body>
+
+    <form>
+
+
+        <div>
+                <label>Ingrese el precio del articulo:(DOP)</label>    
+                <input type="text" id="price"><br>
+        </div>
+      
+        <div>
+                <label>Ingrese el saldo:(DOP)</label>  
+                <input type="text" id="credit"><br>
+        </div>
+        
+        
+        
+        
+
+
+        <button value="enviar" onclick="calculate();">Enviar</button>
+        </form>
+        
+        
+        <script>
+         function calculate(){
+           
+            var price = parseInt(document.getElementById("price").value);
+            var credit = parseInt(document.getElementById("credit").value);
+            
+            if(credit>=price){
+                alert("Usted debe pagar: "+price+" DOP");
+            }else{
+                var monto = (-1)*(credit-price);
+                alert("Usted debe abonar:"+ monto+"DOP");
+            }
+
+
+           
+            
+
+            
+            
+         }   
+        
+        
+        </script>
+
+</body>
+
+
+
+</html>
+
+
+
