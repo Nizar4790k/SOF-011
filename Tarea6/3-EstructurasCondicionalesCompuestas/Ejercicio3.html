@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<!--
+
+3. Se ingresa por teclado un número positivo de uno o dos dígitos (1..99) 
+mostrar un mensaje indicando si el número tiene uno o dos dígitos 
+(recordar de convertir a entero con parseInt 
+para preguntar posteriormente por una variable entera). 
+Tener en cuenta qué condición debe cumplirse para tener dos dígitos un número entero.
+
+-->
+
+
+</head>
+
+<body>
+
+    <form>
+
+
+        <div>
+                <label>Ingrese un numero:</label>    
+                <input type="text" id="numero1"><br>
+        </div>
+      
+       
+     
+        
+
+        <button value="enviar" onclick="calculate();">Enviar</button>
+        </form>
+        
+        
+        <script>
+         function calculate(){
+           
+            
+
+            var numero1 = parseFloat(document.getElementById("numero1").value);
+
+            if((numero1/10)>=1){
+                alert("El numero tiene 2 o mas digitos");
+            }else{
+                alert("El numero tiene 1 digito");
+            }
+            
+          
+            
+           
+           
+           
+          
+                
+
+
+         }   
+        
+        
+        </script>
+
+</body>
+
+
+
+</html>
+
+
+
