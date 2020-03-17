@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--
+
+1. Realizar un programa que lea por teclado dos números, 
+si el primero es mayor al segundo informar su suma y diferencia, 
+en caso contrario informar el producto y la división del primero respecto al segundo.
+
+-->
+
+
+</head>
+
+<body>
+
+
+    <script>
+
+        var name = prompt("Digite el nombre del postulante");
+        var qNumber = prompt("Digite la cantidad de preguntas que se realizaron");
+        var qSuccess = prompt("Digite la cantidad de preguntas contestadas correctamente");
+
+        var percent = (qSuccess * 100) / qNumber;
+        var level = null;
+
+        if (percent >= 90) {
+            level="Superior";
+    
+        } else if (percent >= 75 && percent < 90) {
+
+            level="Medio";
+
+        } else if (percent >= 50 && percent < 75) {
+
+            level="Normal";
+
+
+        } else if (percent < 50) {
+
+            level="Fuera de nivel";
+
+        }
+
+        alert("Nombre:" + name + "\n"
+            + "Nivel:" + level + "\n"
+            + "Porcentaje(%):" + percent);
+
+
+
+
+
+    </script>
+
+</body>
+
+
+
+</html>

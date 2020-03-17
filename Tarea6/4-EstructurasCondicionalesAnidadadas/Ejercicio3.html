@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<!--
+
+1. Realizar un programa que lea por teclado dos números, 
+si el primero es mayor al segundo informar su suma y diferencia, 
+en caso contrario informar el producto y la división del primero respecto al segundo.
+
+-->
+
+
+</head>
+
+<body>
+
+    <form>
+
+
+        <div>
+                <label>Dame un numero:</label>    
+                <input type="text" id="number1"><br>
+        </div>
+      
+      
+
+        <button value="enviar" onclick="calculate();">Enviar</button>
+        </form>
+        
+        
+        <script>
+         function calculate(){
+           
+            var number1 = parseInt(document.getElementById("number1").value);
+          
+
+            if((number1/100)>=1){
+                alert("El numero tiene 3 o mas cifras");
+
+            }else if((number1/100)<1 && (number1/10)>=1){
+                alert("El numero tiene 2 cifras");
+            }else {
+                alert("Este numero tiene 1 cifra");
+            }
+         }
+        
+        </script>
+
+</body>
+
+
+
+</html>
+
+
