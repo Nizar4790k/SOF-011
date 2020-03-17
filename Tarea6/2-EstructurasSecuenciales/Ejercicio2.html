@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<!--
+
+2. Escribir un programa en el cual se ingresen cuatro números, 
+calcular e informar la suma de los dos primeros y el producto del 
+tercero y el cuarto.
+
+
+
+-->
+
+
+</head>
+
+<body>
+
+    <form>
+
+
+        <div>
+                <label>Primer Numero:</label>    
+                <input type="text" id="number1"><br>
+        </div>
+      
+        <div>
+                <label>Segundo Numero:</label>  
+                <input type="text" id="number2"><br>
+        </div>
+        
+        <div>
+
+                <label>Tercer Numero:</label>    
+                <input type="text" id="number3"><br>
+        </div>
+
+
+        <div>
+                <label>Cuarto Numero:</label>  
+                <input type="text" id="number4"><br>
+        </div>
+
+        
+        
+
+
+        <button value="enviar" onclick="calculate();">Enviar</button>
+        </form>
+        
+        
+        <script>
+         function calculate(){
+           
+            var number1 = parseInt(document.getElementById("number1").value);
+            var number2 = parseInt(document.getElementById("number2").value);
+            var number3 = parseInt(document.getElementById("number3").value);
+            var number4 = parseInt(document.getElementById("number4").value);
+
+            var sum = number1 + number2;
+            var product=number3*number4;
+
+            alert("Sum="+sum+"\n"+
+                 "Product="+product);
+           
+            
+         }   
+        
+        
+        </script>
+
+</body>
+
+
+
+</html>
+
+
+

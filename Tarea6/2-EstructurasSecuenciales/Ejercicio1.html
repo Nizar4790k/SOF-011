@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+<!--
+
+1. Realizar la carga del lado de un cuadrado, 
+mostrar por pantalla el perímetro del mismo 
+(El perímetro de un cuadrado se calcula multiplicando el valor del lado por cuatro)
+
+-->
+
+
+</head>
+
+
+<body>
+
+    <form>
+
+        <label>Digite el lado del cuadrado:</label>
+        <input type="text" id="side" ><br>
+        <button  onclick="setSide();">Enviar</button>
+
+
+    </form>
+
+    <script>
+
+        function setSide(){
+
+            var side = document.getElementById("side").value;
+            var perimeter= (4*side);
+            
+            alert("The perimeter is:"+perimeter);
+
+
+
+
+
+        }
+    
+    
+    </script>
+
+
+</body>
+
+
+
+
+</html>
