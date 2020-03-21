@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--
+        2. Confeccionar una función a la cual le envíe tres enteros y 
+        los muestre ordenados de menor a mayor.
+-->
+
+
+</head>
+
+<body>
+
+
+    <script>
+
+
+        var n1 = prompt("Digite el primer numero");
+        var n2 = prompt("Digite el segundo numero");
+        var n3 = prompt("Digite el tercer numero");
+
+        sort(n1, n2, n3);
+
+
+        function sort(n1, n2, n3) {
+
+            var array = [n1, n2, n3];
+
+
+
+
+
+            for (var i = 1; i < array.length; i++) {
+
+                for (var j = 0; j < (array.length - i); j++) {
+
+                    if (array[j] > array[j + 1]) {
+
+                       var aux = array[j + 1];
+
+                        array[j + 1] = array[j];
+
+                        array[j] = aux;
+
+                    }
+
+                }
+
+            }
+
+
+
+            var report="";
+            for (var i = 0; i < array.length; i++) {
+                report+=array[i]+"\n";
+            }
+
+            alert(report);
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+
+
+</html>
