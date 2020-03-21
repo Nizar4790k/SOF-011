@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--
+  2. Desarrollar un programa que solicite la carga de 10 números e 
+  imprima la suma de lo últimos 5 valores ingresados.
+-->
+
+
+</head>
+
+<body>
+
+
+    <script>
+
+
+            var manana= [];
+            var tarde = [];
+            var noche= [];
+
+
+
+
+            alert("Turno manana");
+            for(var i=0;i<5;i++){
+                manana.push(parseInt(prompt("Digite la edad del estudiante"+(i+1))));
+            }
+
+            alert("Turno tarde");
+            for(var i=0;i<5;i++){
+                tarde.push(parseInt(prompt("Digite la edad del estudiante"+(i+1))));
+            }
+
+            alert("Turno noche");
+            for(var i=0;i<5;i++){
+                noche.push(parseInt(prompt("Digite la edad del estudiante"+(i+1))));
+            }
+
+            var avgEdadManana = avg(manana);
+            var avgEdadTarde = avg(tarde);
+            var avgEdadNoche = avg(noche);
+
+            alert("AVG edad manana:"+avgEdadManana+"\n"+
+            "AVG edad tarde:"+avgEdadTarde+"\n"+
+            "AVG edad noche:"+avgEdadNoche+"\n"
+            
+            );
+
+
+
+                function avg (array){
+
+                    var avg = 0;
+
+                    for(var i=0;i<array.length;i++){
+                        avg +=array[i];
+                    }
+
+                    avg=avg/array.length;
+
+                    return avg;
+
+
+                }
+
+                if((avgEdadManana>avgEdadTarde)&&(avgEdadManana>avgEdadNoche)){
+                    alert("El turno de la manana tiene el mayor promedio de edad");
+                } else if((avgEdadTarde>avgEdadManana) && (avgEdadTarde>avgEdadNoche)){
+
+                    alert("El turno de la tarde tiene el mayor promedio de edad");
+                }else{
+
+                    alert("El turno de la noche tiene el mayor promedio de edad");
+                }
+
+
+   
+
+    </script>
+
+</body>
+
+
+
+</html>

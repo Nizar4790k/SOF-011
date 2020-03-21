@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--
+     1. Confeccionar un programa que lea 3 pares de datos, cada par de datos corresponde a la medida de la base y la altura de un triángulo. El programa deberá informar:
+
+   a) De cada triángulo la medida de su base, su altura y su superficie.
+
+   b) La cantidad de triángulos cuya superficie es mayor a 12.
+-->
+
+
+</head>
+
+<body>
+
+
+    <script>
+
+      var cantidadSuperficieMayor12=0;
+
+      for(var i=0;i<3;i++){
+
+          var altura = prompt("Digite la altura del triangulo "+i); 
+          var base= prompt("Digite la base del triangulo "+i); 
+          var superficie=(base*altura)/2;
+
+          alert("La superficie del triangulo "+i +" es "+superficie);
+
+          if(superficie>12){
+              cantidadSuperficieMayor12++;
+          }
+
+          /*
+          var base = promt("Digite la base del triangulo "+i);
+          var superficie = (base * altura)/2;
+          */
+
+
+      }
+
+      alert("La cantidad de triangulo con superficie mayor a 12 es "+cantidadSuperficieMayor12);
+
+
+
+    </script>
+
+</body>
+
+
+
+</html>

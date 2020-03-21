@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--
+  2. Desarrollar un programa que solicite la carga de 10 números e 
+  imprima la suma de lo últimos 5 valores ingresados.
+-->
+
+
+</head>
+
+<body>
+
+
+    <script>
+
+    var isoceles=0;
+    var escaleno=0;
+    var equilatero=0;
+
+    var trianguloMenorCantidad;
+
+    
+
+    for(var i=1;i<=4;i++){
+
+        var primerLado= prompt("Ingrese el  primer lado del triangulo "+i);
+        var segundoLado= prompt("Ingrese el segundo lado del triangulo "+i);
+        var tercerLado= prompt("Ingrese el  tercer lado del triangulo "+i);
+        
+        var esEquilatero= (primerLado==segundoLado) && (segundoLado==tercerLado) && (primerLado==tercerLado);
+        var esIsoceles=(primerLado==segundoLado) || (segundoLado==tercerLado) || (primerLado==tercerLado);
+        var esEscaleno= !esIsoceles && !esEquilatero;
+
+        if(esEquilatero){
+            alert("El triangulo es equilatero");
+         equilatero++;
+        }else if(esIsoceles){
+            alert("El triangulo es isoceles");
+            isoceles++;
+        }else if(esEscaleno){
+
+            alert("El triangulo es escaleno");
+            escaleno++;
+        }
+    
+
+
+    }
+
+
+    
+
+    alert("Escaleno: "+escaleno +"\n"+
+          "Isoceles: "+isoceles +"\n"+
+          "Equilatero: "+equilatero +"\n");
+    
+            
+
+    if((escaleno < isoceles) && (escaleno < equilatero)){
+        alert("La menor cantidad de triangulos es de tipo escaleno");
+    } else if((isoceles < escaleno) && (isoceles < equilatero)){
+        alert("La menor cantidad de triangulos es de tipo isoceles");
+    }else if((equilatero < isoceles)&&(equilatero < escaleno)){
+        alert("La menor cantidad de triangulos es de tipo isoceles");
+    }
+
+   
+    
+
+
+
+
+
+    </script>
+
+</body>
+
+
+
+</html>

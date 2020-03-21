@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--
+  2. Desarrollar un programa que solicite la carga de 10 números e 
+  imprima la suma de lo últimos 5 valores ingresados.
+-->
+
+
+</head>
+
+<body>
+
+
+    <script>
+
+    var cantidadPuntos = prompt("Ingrese la cantidad de puntos");
+    
+    var primerCuadrante=0;
+    var segundoCuadrante=0;
+    var tercerCuadrante=0;
+    var cuartoCuadrante=0;
+    var interseccionY=0;
+    var origen=0;
+
+    for(var i=1;i<=cantidadPuntos;i++){
+
+        var x = prompt("ingrese la cordenada x del punto "+i);
+        var y = prompt("Ingrese la cordenada y del punto "+i);
+
+        if(x>0 && y>0){
+            primerCuadrante++;
+        }else if(y>0 && x<0){
+            segundoCuadrante++;
+        }else if(y<0 && x< 0){
+            tercerCuadrante++;
+        }else if(x>0 && y<0){
+            cuartoCuadrante++;
+        }
+
+    }
+
+    alert("Primer cuadrante:"+primerCuadrante+"\n"+
+    "Segundo cuadrante:"+segundoCuadrante+"\n"+
+    "Tercer cuadrante:"+tercerCuadrante+"\n"+
+    "Cuarto cuadrante:"+cuartoCuadrante+"\n"
+    );
+
+
+    </script>
+
+</body>
+
+
+
+</html>
