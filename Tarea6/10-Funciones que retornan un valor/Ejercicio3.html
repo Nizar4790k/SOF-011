@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--
+    3. Desarrollar una función que retorne la cantidad de dígitos 
+    que tiene una variable entera positiva de hasta 5 dígitos.
+-->
+
+
+</head>
+
+<body>
+
+
+    <script>
+
+
+        var n = prompt("Dame un numero");
+
+        var cantidadDigitos = getCantidadDigitos(n);
+
+        alert("La cantidad de digitos es"+cantidadDigitos);
+
+        function getCantidadDigitos(n){
+
+            if((n/10000)>=1){
+                return 5;
+            }else if((n/1000)>=1){
+                return 4;
+            } else if((n/100)>=1){
+                return 3;
+            } else if((n/10)>=1){1             
+              return 2;
+            }else {
+                return 1;
+            }
+
+            return 0;
+
+
+        }
+        
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+
+
+</html>
