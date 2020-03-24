@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--
+      1. Solicitar que se ingrese el nombre y la clave de un usuario. Mostrar una ventana de alerta si en l
+      a clave se ingresan menos de 7 caracteres o más de 20.
+   
+-->
+
+
+</head>
+
+<body>
+
+
+    <form>
+
+    <label>Username</label>
+    <input type="username"  id="username"><br>
+    <label>Password:</label>
+    <input type="password"  id="pass" onblur="compare();"><br>
+    
+    
+
+
+    </form>
+
+
+    <script>
+
+
+        function compare(){
+            
+            var password = document.getElementById("pass").value;
+
+            if(password.length<=6 || password.length>=19 ){
+                alert("Contrasena no valida");
+            }
+
+
+
+          
+         
+
+
+        }
+
+        
+
+
+
+
+
+
+    </script>
+
+</body>
+
+
+
+</html>

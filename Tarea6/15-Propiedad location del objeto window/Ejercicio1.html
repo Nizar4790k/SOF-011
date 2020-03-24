@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--
+ 
+        1. Confeccionar una página que tenga un botón. 
+        Cuando se presione dicho botón generar un valor aleatorio entre 0 y 2. Si se genera el 0 llamar al webmail de Outlook, si se genera un 1 llamar a gmail en caso de generarse un 2 llamar a yahoo.
+
+   Para generar un valor aleatorio utilizar la función random del objeto Math.
+-->
+
+
+</head>
+
+<body>
+
+
+    <form>
+
+   
+    <button onclick="location();" >Click me</button><br>
+    
+
+
+    </form>
+
+
+    <script>
+
+     
+
+        function location(){
+            
+            var num=parseInt(Math.random()*3);
+   
+
+
+          if(num==0){
+            window.location="http://www.outlook.com";
+          }else if(num==1){
+            window.location="http://www.yahoo.com";
+
+          }else{
+            window.location="http://www.gmail.com";
+          }
+         
+
+
+        }
+
+        
+
+
+
+
+
+
+    </script>
+
+</body>
+
+
+
+</html>

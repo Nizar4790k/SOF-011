@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--
+        1. Disponer dos campos de texto tipo password.
+         Cuando se presione un botón mostrar si las dos claves ingresadas son iguales o no 
+         (es muy común solicitar al operador el ingreso de dos veces de su clave para validar 
+         si las escribió correctamente, esto se hace cuando 
+         se crea una password para el ingreso a un sitio o para el cambio de una existente).
+
+Tener en cuenta que podemos emplear el operador == para ver s
+i dos string son iguales.
+   
+-->
+
+
+</head>
+
+<body>
+
+
+    <form>
+
+    <input type="password"  id="p1"><br>
+    <input type="password"  id="p2"><br>
+    
+    <button onclick="compare();" >Enviar</button><br>
+    
+
+
+    </form>
+
+
+    <script>
+
+
+        function compare(){
+            
+           var p1 = document.getElementById("p1").value;
+           var p2= document.getElementById("p2").value;
+
+            if(p1==p2){
+                alert("Las claves son iguales");
+            }else{
+                alert("Las claves son diferentes");
+            }
+
+         
+
+
+        }
+
+        
+
+
+
+
+
+
+    </script>
+
+</body>
+
+
+
+</html>

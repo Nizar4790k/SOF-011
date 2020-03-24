@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--
+   1. Crear un formulario con tres botones con las leyendas "1", "2" y "3". 
+   Mostrar un mensaje indicando qué botón se presionó.
+-->
+
+
+</head>
+
+<body>
+
+
+    <form>
+
+    <input type="text"  id="num"><br>
+
+    <button onclick="square();" >Calcular</button><br>
+    
+
+
+    </form>
+
+
+    <script>
+
+
+        function square(){
+            
+            var num = parseInt(document.getElementById("num").value);
+
+            alert("El cubo es "+Math.pow(num,3));
+
+
+        }
+
+        
+
+
+
+
+
+
+    </script>
+
+</body>
+
+
+
+</html>

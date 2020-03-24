@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--
+   3. Cargar un nombre y un apellido en sendos text.
+    Al presionar un botón, concatenarlos y mostrarlos en un tercer text 
+    (Tener en cuenta que podemos modificar la propiedad value de un objeto TEXT cuando ocurre un evento)
+-->
+
+
+</head>
+
+<body>
+
+
+    <form>
+
+    <input type="text"  id="firstName"><br>
+    <input type="text"  id="lastName"><br>
+    <input type="text"  id="fullName"><br>
+    <button onclick="getFullName();" >Enviar</button><br>
+    
+
+
+    </form>
+
+
+    <script>
+
+
+        function getFullName(){
+            
+           var firstName = document.getElementById("firstName").value;
+           var lastName = document.getElementById("lastName").value;
+
+            alert("");
+          
+          var fullName = firstName +lastName;
+
+          document.getElementById("fullName").value=fullName;
+    
+
+         
+
+
+        }
+
+        
+
+
+
+
+
+
+    </script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--
+   2. Cargar dos números en objetos de tipo text y al presionar un botón, mostrar el mayor.
+-->
+
+
+</head>
+
+<body>
+
+
+    <form>
+
+    <input type="text"  id="num1"><br>
+    <input type="text"  id="num2"><br>
+
+    <button onclick="bigger();" >Calcular</button><br>
+    
+
+
+    </form>
+
+
+    <script>
+
+
+        function bigger(){
+            
+           var num1 = document.getElementById("num1").value;
+           var num2 = document.getElementById("num2").value;
+
+            if(num1==num2){
+                alert("Los numeros son iguales");
+                return;
+            }
+
+           if(num1>num2){
+            alert(num1);
+
+           }else{
+            alert(num2);
+           }
+
+
+        }
+
+        
+
+
+
+
+
+
+    </script>
+
+</body>
+
+
+
+</html>
